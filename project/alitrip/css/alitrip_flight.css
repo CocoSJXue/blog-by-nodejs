@@ -1,0 +1,801 @@
+/*导航*/
+body{
+	background-color: #ededed;
+}
+nav{
+	background: #fff url(../img/flight_nav_border.jpg) repeat-x;
+}
+
+/*副导航*/
+.subnav{
+	width:990px;
+}
+.subnav_apear .subnav{
+	display: none;
+}
+.subnav_apear:hover .subnav{
+	width:1190px;
+	position: absolute;
+	bottom: -45px;
+	left:0;
+	z-index: 10;
+	display: block;
+}
+
+/*国内机票*/
+.flight_search{
+	height:295px;
+	border-bottom:16px solid #ededed;
+}
+.search_left{
+	width:388px;
+	height:293px;
+	border:1px solid #e3e6ea;
+	background:url(../img/flight_search_bg.jpg) no-repeat 0px bottom;
+	background-color: #fff;
+	position: relative;
+}
+.air_subnav{
+	width:363px;
+	height:42px;
+	line-height:13px;
+	border-bottom:1px solid #e3e6ea;
+	padding-left:25px;
+}
+.air_subnav a{
+	padding:15px 6px 15px 8px;
+}
+.air_subnav .bg_airline{
+	width:1px;
+	height:15px;
+	background:url(../img/bg.png) no-repeat -103px -152px;
+	margin:14px 5px 0px;
+}
+.air_subnav .subnav_active,.air_subnav a:hover{
+	padding-bottom:12px;
+	border-bottom:3px solid #5eb5f1;
+}
+.air_detial{
+	width:388px;
+}
+.air_round{
+	width:363px;
+	height:27px;
+	line-height:27px;
+	margin:13px 0px 0px 25px;
+}
+.air_round .order{
+	width:131px;
+}
+.air_fromto{
+	width:363px;
+	padding-left:25px;
+}
+.fromto,.air_fromto a{
+	vertical-align: top;
+}
+.fromto{
+	width:160px;
+}
+.air_fromto input{
+	width:158px;
+	height:28px;
+	margin-bottom:8px;
+	border:1px solid #c7d1e4;
+	border-radius:1px;
+}
+.air_fromto span{
+	width:160px;
+	height:20px;
+	line-height:20px;
+}
+.air_fromto .chang_to{
+	width:28px;
+	height:100px;
+}
+.air_fromto .bg_changeto{
+	width:28px;
+	height:65px;
+	background:url(../img/bg.png) no-repeat 0px -173px;
+	margin-top:35px;
+}
+.flight_submit{
+	height:36px;
+	width:158px;
+	background-color:#63b8f0;
+	color:white;
+	text-align: center;
+	margin:3px 28px 0px 0px;
+}
+.air_detial .safeguard{
+	width:390px;
+	height:33px;
+	line-height:33px;
+	border-top:1px solid #e7eaec;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	text-indent: 40px;
+}
+.search_right{
+	width:590px;
+	margin-left:10px;
+}
+.search_right_pic{
+	width:590px;
+	height:230px;
+}
+.search_right_bot{
+	height:63px;
+	width:590px;
+	border-top:1px solid #e9eef1;
+	border-bottom:1px solid #eaeaea;
+	background-color: #fff;
+}
+.search_right_bot1{
+	height:61px;
+	width:590px;
+	border-top:1px solid #f2f6f9;
+	border-bottom:1px solid #ededed;
+}
+.bg_search_ensure{
+	width:101px;
+	height:36px;
+	background:url(../img/bg.png) no-repeat 0px -509px;
+	margin:13px 5px 0px 21px;
+}
+.search_right_text{
+	height:36px;
+	line-height: 36px;
+	background:url(../img/flight_search_line3.jpg) no-repeat left;
+	padding:6px 0px 7px 14px;
+	margin:6px 0px 6px 14px;
+}
+.search_right_text span{
+	height:18px;
+	line-height:18px;
+	width:36px;
+	text-align: center;
+}
+
+/*特价航班*/
+.flight_onasles{
+	height:296px;
+	background-color: white;
+}
+.onsales_title{
+	padding:23px 40px 14px 29px;
+	width:921px;
+	height:30px;
+}
+.onsales_title h3{
+	width:101px;
+	height:30px;
+	line-height:30px;
+	font-size:20px;
+}
+.onsales_title input{
+	height:28px;
+	line-height:28px;
+	border:1px solid #c7d1e4;
+}
+.onsales_title select{
+	height:30px;
+	line-height:30px;
+	font-size:12px;
+	border:1px solid #c7d1e4;
+}
+.onsales_title .title_fromto{
+	/*width:48px;*/
+}
+.onsales_title .title_flytime{
+	/*width:86px;*/
+}
+.onsales_tips{
+	height:30px;
+	line-height:30px;
+}
+
+.onsales_cont{
+	height:200px;
+	width:938px;
+	padding:0px 20px 29px 32px;
+}
+.onsales_cont .onsales_cont_left{
+	height:100%;
+	width:284px;
+	padding-right:20px;
+}
+.onsales_cont .onsales_detail{
+	width:284px;
+	height:40px;
+	line-height:40px;
+}
+.onsales_cont .onsales_detail:hover{
+	background-color:rgba(0,0,0,0.1);
+	border-radius: 4px;
+}
+.onsales_detail .onsales_fromto{
+	width:131px;
+}
+.onsales_detail .time{
+	width:40px;
+	color:#808080;
+}
+.onsales_detail .value-discount{
+	width:113px;
+	height:40px;
+}
+.onsales_detail .onsales_value{
+	width:79px;
+	height:34px;
+	line-height:34px;
+	font-size:24px;
+	color:#ff8800;
+	text-align: right;
+}
+.onsales_detail .onsales_discount{
+	width:34px;
+	color:#808080;
+	text-align: right;
+}
+.onsale_border{
+	border-right:1px dotted #dedede;
+	margin-right:10px;
+}
+/*退改签*/
+.flight_refund{
+	height:154px;
+	background-color: white;
+}
+.refound_left{
+	width:360px;
+	height:154px;
+	padding-left:30px;
+	
+}
+.refound_left_top{
+	width:340px;
+	height:18px;
+	padding-top:32px;
+	padding-bottom:15px;
+	margin-right:20px;
+	border-bottom:1px solid #dfdfdf;
+}
+.refound_left_top li{
+	width:76px;
+	height:18px;
+	line-height:18px;
+}
+.bg_reound1{
+	width:23px;
+	height:18px;
+	background:url(../img/bg_light.png) no-repeat;
+}
+.bg_reound2{
+	width:20px;
+	height:18px;
+	background:url(../img/bg_light.png) no-repeat 0 -23px;
+}
+.bg_reound3{
+	width:20px;
+	height:18px;
+	background:url(../img/bg_light.png) no-repeat 0 -46px;
+}
+.refound_left_bot{
+	width:360px;
+	height:52px;
+	padding-top:17px;
+	padding-bottom:20px;
+}
+.refound_left_bot li{
+	width:90px;
+	height:16px;
+	line-height:16px;
+	padding-bottom:10px;
+	text-align: center;
+}
+.bg_reound_bot1,.bg_reound_bot2,.bg_reound_bot3,.bg_reound_bot4,.bg_reound_bot5,.bg_reound_bot6,.bg_reound_bot7,.bg_reound_bot8{
+	width:19px;
+	height:16px;
+	background:url(../img/bg_light.png) no-repeat;
+}
+.bg_reound_bot1{
+	background-position: -45px 0px;
+}
+.bg_reound_bot2{
+	background-position: -23px 0px;
+}
+.bg_reound_bot3{
+	background-position: -66px 0px;
+}
+.bg_reound_bot4{
+	background-position: -87px 0px;
+}
+
+.bg_reound_bot5{
+	background-position: -108px 0px;
+}
+.bg_reound_bot6{
+	background-position: -129px 0px;
+}
+.bg_reound_bot7{
+	background-position: -150px 0px;
+}
+.bg_reound_bot8{
+	background-position: -171px 0px;
+}
+
+
+.refound_right{
+	width:587px;
+	height:100px;
+	padding-left:12px;;
+	margin:27px 0px 27px;
+	border-left:1px dotted #dedede;
+}
+.refound_right_pic{
+	height:100px;
+	width:200px;
+}
+.refound_right_text{
+	height:100px;
+	width:387px;
+}
+.refound_text1{
+	height:22px;
+	padding-left:16px;
+	line-height:22px;
+	font-size:14px;
+}
+.refound_text_bot{
+	padding:33px 0px 0px 10px;
+	height:45px;
+	width:200px;
+}
+.refound_text_value{
+	width:155px;
+	height:45px;
+}
+.refound_text_re-value{
+	height:19px;
+	line-height:19px;
+	color:#888;
+	font-size:12px;
+	text-decoration: line-through;
+}
+.refound_text_now-value{
+	width:119px;
+	height:26px;
+	line-height:26px;
+	font-size:24px;
+	color:#ff8800;
+}
+.refound_text_discount{
+	padding-top:8px;
+	width:36px;
+	height:18px;
+	line-height:18px;
+	font-size: 12px;
+	color:#888;
+}
+.refound_text_bot input{
+	width:45px;
+	height:22px;
+	border:1px solid #dcdcdc;
+	margin:21px 0px 2px;
+	color:#545454;
+	background:url(../img/flight_refound_sumit_bc.jpg) repeat-x;
+}
+/*保险*/
+.flight_insure{
+	width:960px;
+	height:100px;
+	padding:27px 0px 27px 30px;
+	background-color: white;
+}
+.flight_insure-left{
+	width:350px;
+	height:98px;
+	padding-left:10px;
+	margin-right:13px;
+	border:1px solid #dfdfdf;
+	color:#545454;
+	background: url(../img/flight_insure_bg.jpg) no-repeat 0px bottom;
+}
+.insure_title{
+	height:36px;
+	line-height:36px;
+	font-size:16px;
+	color:#646464;
+	padding-bottom:3px;
+}
+.insure_select{
+	height:22px;
+}
+.insure_kinds{
+	width:164px;
+	height:22px;
+	line-height:20px;
+	border:1px solid #afafaf;
+	margin-right:8px;
+}
+.insure_deadline{
+	width:104px;
+	height:22px;
+	border:1px solid #afafaf;
+	margin-right:8px;
+}
+.insure_select input{
+	height:22px;
+	width:56px;
+	line-height:20px;
+	color:#545454;
+	background:url(../img/flight_refound_sumit_bc.jpg) repeat-x;
+}
+.flight_insure-right{
+	width:540px;
+	height:100px;
+	padding-right:45px;
+}
+.flight_insure-right li{
+	height:100px;
+	width:270px;
+}
+.insure_right_pic{
+	width:100px;
+	height:100px;
+	padding-right:10px;
+}
+.insure_detail_text{
+	width:160px;
+	height:42px;
+	line-height:21px;
+	color:#404040;
+}
+.insure_detail_text2{
+	height:32px;
+	line-height:32px;
+	color:#888888;
+}
+.flight_insure-right input{
+	margin-top:4px;
+	width:56px;
+	height:22px;
+	color:#545454;
+	background:url(../img/flight_refound_sumit_bc.jpg) repeat-x;
+}
+/*明星商家*/
+.flight_star{
+	width:929px;
+	height:127px;
+	padding:6px 31px 30px 30px;
+	background-color: white;
+}
+.flight_star_title{
+	height:40px;
+	line-height:40px;
+	font-size:18px;
+	color:#404040;
+}
+.flight_star_pic{
+	height:85px;
+	width:928px;
+	border:1px solid #ededed;
+	border-right:none;
+}
+.star_turnleft,.star_turnright{
+	width:31px;
+	height:100%;
+	border-right:1px solid #ededed;
+}
+.turnleft_botton{
+	width:0px;
+	height:0px;
+	border-top:9px solid white;
+	border-bottom:9px solid white;
+	border-right:9px solid #d5d5d5;
+	margin:33px 0px 0px 10px;
+}
+.turnright_botton{
+	width:0px;
+	height:0px;
+	border-top:9px solid white;
+	border-bottom:9px solid white;
+	border-left:9px solid #d5d5d5;
+	margin:33px 10px 0px 0px;
+}
+.star_pic{
+	height:75px;
+	width:107px;
+	border-right:1px solid #ededed;
+	padding-top:10px;
+	text-align: center;
+}
+.star_pic img{
+	height:50px;
+	width:50px;
+}
+.star_pic_text{
+	color:#4a4a4a;
+}
+/*航空旗舰店*/
+.flight_flag{
+	height:480px;
+}
+.flight_flag h2{
+	height:56px;
+	line-height:56px;
+	font-size:18px;
+	color:#404040;
+	text-indent:30px;
+	background-color:white;
+}
+.flight_flag_cont{
+	height:424px;
+	width:100%;
+}
+.flag_cont_leftbox{
+	width:45px;
+	height:424px;
+	padding:0px 6px 0px 5px;
+	background-color: white;
+}
+.flag_cont_left{
+	width:45px;
+	height:424px;
+}
+
+.flag_cont_left li{
+	height:37px;
+	width:45px;
+	border-bottom:1px solid #f2f4f6;
+}
+.flag_cont_left a{
+	height:31px;
+	width:45px;
+	text-align: center;
+	padding-top:6px;
+}
+.flag_cont_detail{
+	width:325px;
+	height:424px;
+	border-left:3px solid #e9e9e9;
+}
+.flag_logo{
+	width:305px;
+	height:94px;
+	margin:15px 10px 3px;
+}
+.flag_ship{
+	width:273px;
+	height:246px;
+	margin:0px 30px 10px 22px;
+}
+.flag_ship h3{
+	height:54px;
+	line-height:54px;
+	font-size:18px;
+	color:#404040;
+}
+.flag_ship p{
+	height:192px;
+	width:273px;
+	line-height:32px;
+	font-size:16px;
+	color:#484848;
+	text-indent: 3em;
+}
+.flag_ship_bot{
+	height:56px;
+	line-height:56px;
+	font-size:16px;
+	padding-left:36px;
+}
+.flag_ship_bot a{
+	color:#0185b8;
+}
+.flight_flag_line{
+	background:url(../img/flight_flag_line.jpg) no-repeat right 20px;
+	padding-right:13px;
+	margin-right:13px;
+}
+.flag_cont_info{
+	width:598px;
+	height:424px;
+	padding-right:8px;
+	background-color: white;
+}
+.flag_cont_place{
+	width:550px;
+	height:20px;
+	line-height:20px;
+	padding:0px 27px 10px 21px;
+}
+.flag_info{
+	height:20px;
+}
+.flag_info li{
+	width:58px;
+}
+.flag_info .flag_info_line{
+	border-right:1px solid #ededed;
+}
+.flag_info a{
+	width:46px;
+	padding:0px 6px;
+	text-align: center;
+}
+.flag_active{
+	background-color: #ff8800;
+	color:white;
+}
+.flag_more{
+	width:40px;
+}
+.flag_info_detail{
+	width:571px;
+	height:374px;
+	padding-left:27px;
+}
+.flag_detail_left{
+	width:275px;
+	height:374px;
+}
+.flag_detail_left li{
+	width:275px;
+	height:48px;
+	line-height:48px;
+}
+.flag_detail{
+	width:268px;
+}
+.flag_detail:hover{
+	background-color:rgba(0,0,0,0.1);
+	border-radius: 4px;
+}
+.flag_detail_time{
+	width:64px;
+	font-size:12px;
+	color:#808080;
+}
+.flag_detail_fromto{
+	width:84px;
+	font-size:12px;
+	color:#808080;
+}
+.flag_detail_value{
+	width:70px;
+	font-size:24px;
+	color:#ff8800;
+}
+.flag_detail_diacount{
+	width:50px;
+	font-size:12px;
+	color:#808080;
+}
+.flag_detail_line{
+	border-right:1px solid #f2f2f2;
+	margin-right:20px;
+}
+/*低价曲线*/
+.flight_curve{
+	height:404px;
+	background-color: white;
+}
+.flight_curve_title{
+	width:960px;
+	height:30px;
+	line-height:30px;
+	padding:29px 0px 20px 30px;
+}
+.flight_curve_title a{
+	width:213px;
+	font-size:18px;
+	color:#355976;
+}
+.flyfrom,.flyarrive{
+	padding-right:19px;
+}
+.flyfrom input,.flyarrive input{
+	width:143px;
+	height:28px;
+	border:1px solid #c7d1e4;
+	border-radius: 1px;
+}
+.flight_curve_submit{
+	width:68px;
+	height:32px;
+	background-color:#63b8f0;
+	color:white;
+}
+.curve_pic{
+	padding-left:64px;
+}
+.curve_pic_tips{
+	width:178px;
+	height:12px;
+	line-height:12px;
+	margin:24px auto;
+}
+.curve_pic_tips a{
+	width:71px;
+	height:12px;
+	background:url(../img/flight_curve_+bi.jpg) no-repeat;
+	color:#1f77b4;
+	padding-left:18px;
+}
+.tips_s_b{
+	opacity: 0.3;
+}
+
+
+
+/*机票大全*/
+.flight_flies{
+	width:978px;
+	height:35px;
+	padding:11px 0px 9px 10px;
+	margin:1px 1px 11px 1px;
+	background-color: white;
+}
+
+.greenhand{
+	height:94px;
+	padding:40px 0px 39px 0px;
+	border-top:3px solid #3ea3ff;
+}
+
+.greenhand .greenhand_left{
+	width:643px;
+	height:90px;
+	padding-top:4px;
+}
+
+.greenhand .foot_ensure{
+	padding:9px 0px 0px 21px;
+	width:236px;
+	height:58px;
+}
+.greenhand .foot_ensure_pic{
+	height:38px;
+	padding-bottom:8px;
+}
+.greenhand .bg_ensure_pic{
+	width:35px;
+	height:35px;
+	background:url(../img/bg.png) no-repeat 0px -410px;
+	margin-top:4px;
+	margin-right:17px;
+}
+.greenhand .foot_insure_txt1{
+	height:26px;
+	line-height:26px;
+	font-size:20px;
+	color:#6680a5;
+}
+.greenhand .foot_insure_txt2{
+	height:12px;
+	line-height:12px;
+	font-size:12px;
+	color:#6082a5;
+}
+.greenhand .foot_code{
+	width:90px;
+}
+.greenhand .bg_foot_code{
+	width:75px;
+	height:58px;
+	background: url(../img/bg.png) no-repeat 0px -449px;
+}
+.greenhand .cod_text{
+	width:13px;
+	padding-left:2px;
+	font-size:10px;
+	height:100%;
+	color:#919fae;
+}
+
+
+
+

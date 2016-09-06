@@ -1,0 +1,95 @@
+.mo{
+	margin:0px auto;
+}
+.w1190{
+	width:1190px;
+}
+.oh{
+	overflow: hidden;
+}
+.mr20{
+	margin-right:20px;
+}
+.mr43{
+	margin-right:43px;
+}
+
+.bb_ddd{
+	border-bottom:1px solid #dddddd;
+}
+.wc_red{
+	color:#ff5741;
+}
+.wc_blue{
+	color:#3ea3ff;
+}
+.pos_rel{
+	position:relative;
+}
+.w224{
+	width:224px;
+}
+.w225{
+	width:225px;
+}
+.w246{
+	width:246px;
+}
+.ml56{
+	margin-left:56px;
+}
+.ml156{
+	margin-left:156px;
+}
+.ml240{
+	margin-left:240px;
+}
+.ml300{
+	margin-left:300px;
+}
+
+/*alitrip_flight样式*/
+.w990{
+	width:990px;
+}
+.mb-bb{
+	margin-bottom:10px;
+	border-bottom:1px solid #dedede;
+}
+.w182{
+	width:182px;
+}
+.w183{
+	width:183px;
+}
+.w200{
+	width:200px;
+}
+.h52{
+	height:52px;
+}
+.bcw{
+	background-color: white;
+}
+.navline{
+	background:url(../img/flight_subnav_line.jpg) no-repeat right 9px;
+}
+.pr56{
+	padding-right:56px;
+}
+
+/*hotel*/
+.pr16{
+	padding-right:16px;
+}
+.mr-16{
+	margin-right:-16px;
+}
+.mr-10{
+	margin-right:-10px;
+}
+.move_left_8px:hover{
+	transition: 0.2s linear;
+	transform: translateX(-6px);
+	cursor: pointer;
+}

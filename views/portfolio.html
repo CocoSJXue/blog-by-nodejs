@@ -1,0 +1,42 @@
+{%extends 'layout.html'%}
+
+{%block link_src%}
+	<link rel="stylesheet" href="/public/css/portfolio.css">
+	<script src="/public/js/portfolio.js" type="text/javascript" charset="utf-8"></script>
+{%endblock%}
+
+
+{%block content%}
+{%if route_path == '/portfolio'%}PORTFLIO{%endif%}
+{%endblock%}
+
+{%block main%}
+
+<div id="portfolioMain">
+	<ul id="contList">
+		{%for data in portfolioData%}
+		<li>
+			<div class="imgBox">
+				<img src="{{data.image}}" />
+				<a class="imgHref" href="{{data.href}}"></a>
+			</div>
+			<h3><a href="{{data.href}}">{{data.title}}</a></h3>
+			<div class="cont">
+				<div class="brief">简介：</div>
+				<div class="briefCont">
+					{{data.bCont}}。。。<div class="detailBtn">详情</div>
+				</div>
+				<div class="detailCont">
+					{{data.dCont}}<div class="deDetailBtn">收起</div>
+				</div>
+			</div>
+		</li>
+		{%endfor%}
+		
+	</ul>
+</div>
+
+
+
+{%endblock%}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			img{
+				vertical-align: top;
+				border: none;
+			}
+			section{
+				width: 700px;
+				height: 500px;
+				margin: 0 auto;
+				border: 1px solid black;
+				position: relative;
+				overflow: hidden;
+			}
+			#scoreBox{
+				width: 100px;
+				height: 40px;
+				font: 30px/40px "微软雅黑";
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left: 40%;
+			}
+			#start{
+				width: 50px;
+				height: 50px;
+				border-radius: 25px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-color: black;
+				color: white;
+				text-align: center;
+				line-height: 50px;
+			}
+			#loseTips{
+				width: 300px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				border: 2px solid lavender;
+				color: red;
+				margin: 100px auto;
+				display: none;
+			}
+			#scores{
+				width: 100px;
+				font: 20px/40px "微软雅黑";
+				text-align: right;
+				color: white;
+				background-color: black;
+				border: 1px solid gainsboro;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			#scores div{
+				text-align: center;
+				height: 40px;
+				border-bottom: 1px solid gainsboro;
+			}
+			.matchManBox{
+				width: 20px;
+				height: 52px;
+				overflow: hidden;
+				position: absolute;
+				bottom: 100px;
+				left: 0px;
+			}
+			#matchMan{
+				width: 50;
+				height: 100px;
+				position: absolute;
+				bottom: 0px;
+				left: -10px;
+			}
+			#pierBox{
+				width: 500px;
+				height: 100px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+			#pierBox div{
+				width: 50px;
+				height: 100px;
+				background-color: black;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			#stick{
+				width: 3px;
+				height: 0px;
+				background-color: black;
+				position: absolute;
+				left: 50px;
+				bottom: 100px;
+				transform-origin: 0 3px;
+			}
+		</style>
+		<script src="js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.rotate-0.3.0/jquery.rotate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/stickHero.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<section>
+			<div id="scoreBox"></div>
+			<div id="start">START</div>
+			<div id="loseTips">对不起，你失败了，请重新开始</div>
+			<div id="scores"></div>
+			<div id="matchManBox" class="matchManBox">
+				<img id="matchMan" src="img/1.jpg"/>
+				<!--<img id="matchMan" src="img/2.gif"/>-->
+			</div>
+			<div id="pierBox">
+				<div class="pier" id="111"></div>
+				<div class="pier" id="222"></div>
+				<div class="pier" id="333"></div>
+			</div>
+			<div id="stick"></div>
+		</section>
+	</body>
+</html>

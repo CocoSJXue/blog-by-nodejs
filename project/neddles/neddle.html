@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: black;
+			}
+			#before{
+				width: 200px;
+				text-align: center;
+				position: absolute;
+				top: 10%;
+				left: 40%;
+				z-index: 10;
+			}
+			#name{
+				height: 40px;
+				font: 40px/40px "微软雅黑";
+				margin-bottom: 20px;
+			}
+			#startbtn{
+				width: 100px;
+				height: 100px;
+				margin: 0 auto;
+				border: 1px solid gray;
+				border-radius: 8px;
+				margin-bottom: 10px;
+			}
+			.styles{
+				padding: 10px 50px;
+				height: 30px;
+				font: 20px/30px "微软雅黑";
+				border: 1px solid gray;
+				border-radius: 8px;
+				margin: 8px;
+			}
+			#main{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			#box{
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				top: 10%;
+				left: 40%;
+			}
+			canvas{
+				/*background-color: white;*/
+			}
+			#opa{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: gainsboro;
+			}
+		</style>
+		<script src="js/jCanvaScript.1.5.18.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/needleGame.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<section class="wrap">
+			<div id="before">
+				<div id="name">见缝插针</div>
+				<div id="startbtn">
+					<canvas id="cs" width="100" height="100"></canvas>
+				</div>
+				<div id="skip" class="styles">跳过本关</div>
+				<div id="" class="styles">炫耀一下</div>
+				<div id="restart" class="styles">重头开始</div>
+			</div>
+			
+			<div id="main">
+				<div id="box">
+					<canvas id="c1" width="400" height="600"></canvas>
+				</div>
+			</div>
+		</section>
+		<div id="opa"></div>
+	</body>
+</html>

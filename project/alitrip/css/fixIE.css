@@ -1,0 +1,23 @@
+.air .air_subnav{
+	*line-height:12px;
+}
+.air_opa .bc{
+	*filter: alpha(opacity=20);
+}
+.saleticket{
+	*zoom:1;
+}
+.di{
+	*display: inline;
+}
+.z1{
+	*zoom:1;
+}
+.opa{
+	*filter: alpha(opacity=20);
+}
+.vt{
+	*vertical-align: top;
+}
+
+

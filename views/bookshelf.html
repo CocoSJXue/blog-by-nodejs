@@ -1,0 +1,37 @@
+<!--模板继承-->
+{%extends 'layout.html'%}
+<!--js，css不同-->
+{%block link_src%}
+
+    <link rel="stylesheet" href="/public/css/bookshelf.css">
+    <script src="/public/js/bookshelf.js" type="text/javascript" charset="utf-8"></script>		
+    <script src="/public/src/react.js" type="text/javascript" charset="utf-8"></script>		
+    <script src="/public/src/react-dom.js" type="text/javascript" charset="utf-8"></script>		
+    <script src="/public/src/browser.min.js" type="text/javascript" charset="utf-8"></script>		
+    
+{%endblock%}
+
+<!--小标题不同-->
+{%block content%}
+	{%if route_path == '/bookshelf'%}Bookshelf{%endif%}
+{%endblock%}
+
+<!--主要内容区域-->
+{%block main%}
+
+<div id="bookMain">
+	
+	<ul>
+		{%for attr in bookshelfData%}
+			<li>
+				<img class="sImg" src="{{attr.image}}" alt="{{attr.title}}" href="{{attr.href}}"/>
+			</li>
+		{%endfor%}
+	</ul>
+	
+</div>
+<div class="kDetailBg">
+		
+</div>
+
+{%endblock%}

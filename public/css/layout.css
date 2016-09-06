@@ -1,0 +1,173 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+body{
+	background: linear-gradient(to bottom, #ccc, #fff 50%, #aaa);
+	/*background: url('/public/img/slide1.jpg');*/
+}
+#nav{
+	
+}
+#nav ul{
+	width: 780px;
+	height: 70px;
+	padding:0px 10px;
+	margin: 40px auto;
+	background-color: rgba(33,33,33,.4);
+}
+.option{
+	vertical-align: top;
+	width: 120px;
+	height: 50px;
+	padding: 10px 10px;
+	float: left;
+	perspective: 1200px;
+}
+.box3D{
+	width: 120px;
+	height: 50px;
+	position: relative;
+	transition: .5s;
+	transform: rotateX(0deg);
+	transform-style: preserve-3d;
+}
+.rotate{
+	width: 116px;
+	height: 46px;
+	border: 2px solid rgb(163,135,30);
+	text-align: center;
+	font: 20px/50px "微软雅黑";
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translateZ(25px);
+}
+.rotate_3D{
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	font: 20px/50px "微软雅黑";
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	transform: rotateX(-90deg);
+	background-color: rgb(163,135,30);
+}
+.rotate a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	/*color: rgb(163,135,30);*/
+	color: #fff;
+}
+.rotate_3D a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+#home{
+	width: 200px;
+}
+.home a{
+	width: 250px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	top: -24px;
+	left: 5px;
+	background: url('/public/img/logo_name2.png') no-repeat;
+	background-size: 100% 100%;
+}
+#content{
+	width: 700px;
+	height: 415px;
+	margin: 0px auto;
+	position: relative;
+}
+#header{
+	width: 700px;
+	height: 35px;
+	background: url('/public/img/toppage.png') no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+#toptag{
+	width: 84px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	position: absolute;
+	top: 5px;
+	left: 45%;
+	z-index: 5;
+	color: rgb(163,135,30);
+}
+#main{
+	width: 680px;
+	height: 330px;
+	padding: 10px;
+	background: url('/public/img/bgpage.png') repeat-y;
+	background-size: 100% 100%;
+	/*overflow: hidden;*/
+}
+#main_cont{
+	width: 600px;
+	height: 290px;
+	padding-bottom: 10px;
+	margin: 20px auto;
+	position: relative;
+}
+#scrollBox{
+	width: 3px;
+	/*height: 270px;*/
+	background-color: #ccc;
+	position: absolute;
+	right: -20px;
+	top: 0px;
+	border-radius: 2px;
+}
+#scroll{
+	width: 3px;
+	/*height: 20px;*/
+	background-color: #aaa;
+	border-radius: 2px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+}
+#footer{
+	width: 700px;
+	height: 30px;
+	background: url('/public/img/bottompage3.png') no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+#next{
+	width: 41px;
+	height: 41px;
+	position: absolute;
+	bottom: 6px;
+	left: 330px;
+}
+#next a{
+	width: 41px;
+	height: 41px;
+	display: block;
+	border-radius: 20px;
+	background: #8da83c url('/public/img/btn-nextpage2.png') no-repeat  4px -62px;
+}
+

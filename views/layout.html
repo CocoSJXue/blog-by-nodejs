@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/public/css/layout.css">
+    <link rel="stylesheet" href="/public/css/contact.css">
+    <script src="/public/src/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/public/js/layout.js" type="text/javascript" charset="utf-8"></script>
+    {%block link_src%}
+			
+	{%endblock%}
+    
+</head>
+<body style="background:url('/public/img/slide1.jpg');">
+
+<div id="nav">
+	<ul id="">
+		<li id="" class="option">
+			<div class="box3D">
+				<div class="rotate"><a {%if route_path=="/portfolio"%}style="color:rgb(141,168,60)"{%endif%} href="/portfolio">个人作品</a></div>
+				<div class="rotate_3D"><a href="/portfolio">个人作品</a></div>
+			</div>
+		</li>
+		<li id="" class="option">
+			<div class="box3D">
+				<div class="rotate"><a {%if route_path=="/article"%}style="color:rgb(141,168,60)"{%endif%} href="/article">我之所见</a></div>
+				<div class="rotate_3D"><a href="/article">我之所见</a></div>
+			</div>
+		</li>
+		<li id="home" class="option home"><a href="/"></a></li>
+		<li id="" class="option">
+			<div class="box3D">
+				<div class="rotate"><a {%if route_path=="/bookshelf"%}style="color:rgb(141,168,60)"{%endif%} href="/bookshelf">我的书架</a></div>
+				<div class="rotate_3D"><a href="/bookshelf">我的书架</a></div>
+			</div>
+		</li>
+		<li id="" class="option">
+			<div class="box3D">
+				<div class="rotate"><a {%if route_path=="/contact"%}style="color:rgb(141,168,60)"{%endif%} href="/contact">联系我</a></div>
+				<div class="rotate_3D"><a href="/contact">联系我</a></div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div id="content">
+	<header id="header">
+		<div id="toptag">
+		{%block content%}
+			
+		{%endblock%}
+		</div>
+	</header>
+	<div id="main">
+		<div id="main_cont">
+			{%block main%}
+				
+			{%endblock%}
+			<div id="scrollBox">
+				<div id="scroll"></div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div id="next">
+			<a {%if route_path=="/"%} href="/portfolio" {%elseif route_path=="/portfolio"%} href="/article" {%elseif route_path=="/article"%} href="/bookshelf" {%elseif route_path=="/bookshelf"%} href="/contact" {%elseif route_path=="/contact"%} href="/portfolio" {%endif%}></a>
+		</div>
+	</footer>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+{%extends 'layout.html'%}
+
+
+{%block link_src%}
+	<link rel="stylesheet" href="/public/css/article.css">
+	<script src="/public/js/article.js" type="text/javascript" charset="utf-8"></script>
+{%endblock%}
+
+{%block content%}
+
+{%if route_path == '/article'%}ARTICLE{%endif%}
+
+{%endblock%}
+
+{%block main%}
+<div id="articleMain">
+	<!--大title-->
+	<ul class="pTitle">
+		{%for attr in articleData%}
+		<li class="lis">{{attr.title}}</li>
+		{%endfor%}
+	</ul>
+	<div id="kHtmlMain">
+		<!--每个大title下的小内容-->
+		{%for attr in articleData%}
+		<ul class="kHtml {{attr.title}}" uID="{{attr.title}}">
+			{%for attr2 in attr[attr.title]%}
+			<li>
+				{{attr2.knowledge.kTitle}}
+				<div class="kDetail">{{attr2.knowledge.cont}}</div>
+			</li>
+			{%endfor%}
+		</ul>
+		{%endfor%}
+	</div>
+	<div class="kDetailBg">
+		<div id="cancel">×</div>
+	</div>
+</div>
+
+{%endblock%}

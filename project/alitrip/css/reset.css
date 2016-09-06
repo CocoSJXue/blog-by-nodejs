@@ -1,0 +1,74 @@
+body,dl,dd{
+	margin:0px;
+}
+form{
+	margin:0px;
+	padding:0px;
+}
+input{
+	outline: none;
+	padding:0px;
+	border:1px solid #dfdfdf;
+}
+th{
+	padding:0px;
+}
+ul,ol{
+	margin:0px;
+	padding:0px;
+}
+li{
+	list-style:none;
+}
+img{
+	vertical-align: top;
+	border:none;
+}
+body{
+	font:12px "宋体";
+	position: relative;
+}
+a{
+	text-decoration:none;
+	color:#333333;
+}
+a,span{
+	display: block;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+	*zoom:1;
+}
+th{
+	border: 1px solid #3ea3ff;;
+}
+table{
+	border-collapse: collapse;
+}
+select{
+	border:none;
+	margin:0px;
+	padding:0px;
+	border-radius: 0px;
+}
+option{
+	margin:0px;
+	padding:0px;
+}
+h1,h2,h3,h4{
+	margin:0px;
+	font-weight:normal;
+}
+
+
+
+
+

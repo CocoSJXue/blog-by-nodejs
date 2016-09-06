@@ -1,0 +1,75 @@
+img{
+	vertical-align: top;
+	border: none;
+}
+h1,h2,h3,h4,h5{
+	margin: 0;
+	padding: 0;
+}
+#portfolioMain{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+#contList{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#contList li{
+	position: relative;
+	padding-left: 100px;
+	border-bottom: 1px solid rgb(163,135,30);
+	margin-bottom: 5px;
+}
+#contList li .imgBox,#contList li img,#contList li .imgHref{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	overflow: hidden;
+}
+#contList li .imgHref{
+	background-color: #666;
+	opacity: 0;
+}
+#contList h3{
+	padding: 10px 0;
+}
+#contList .cont{
+	color: #666;
+	position: relative;
+}
+#contList .briefCont{
+	text-indent: 2em;
+	line-height: 26px;
+}
+#contList .detailCont{
+	text-indent: 2em;
+	line-height: 26px;
+	padding-bottom: 30px;
+	padding-right: 10px;
+	display: none;
+}
+#contList .detailBtn,#contList .deDetailBtn{
+	cursor: pointer;
+	text-indent: 0;
+	position: absolute;
+	bottom: 2px;
+	line-height: 26px;
+	padding: 0 10px;
+	color: #333;
+	border: 1px solid rgb(163,135,30);
+	box-shadow: 3px 3px 3px rgb(163,135,30);
+}
+#contList .detailBtn{
+	right: 3px;
+}
+#contList .deDetailBtn{
+	right: 45%;
+}
+
+

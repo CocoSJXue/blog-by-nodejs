@@ -1,0 +1,250 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'webpack',
+1 verbose cli   '-g' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'webpack', null ]
+7 verbose cache add spec webpack
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'webpack',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'webpack',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed webpack@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for webpack
+11 info addNameTag [ 'webpack', 'latest' ]
+12 silly mapToRegistry name webpack
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'webpack',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'webpack',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/webpack
+17 verbose addNameTag registry:https://registry.npmjs.org/webpack not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/webpack
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 08:03:05
+21 verbose request id bda98c4a741f938f
+22 http request GET https://registry.npmjs.org/webpack
+23 http 200 https://registry.npmjs.org/webpack
+24 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 verbose headers   etag: '"1G1GR3P1989FDSF809A8MAS12"',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'content-encoding': 'gzip',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   'content-length': '65660',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Fri, 02 Sep 2016 00:02:52 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   age: '179',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '10',
+24 verbose headers   'x-timer': 'S1472774572.708998,VS0,VE0',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 200,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     etag: '"1G1GR3P1989FDSF809A8MAS12"',
+25 silly get     'content-type': 'application/json',
+25 silly get     'content-encoding': 'gzip',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     'content-length': '65660',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Fri, 02 Sep 2016 00:02:52 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     age: '179',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-sin6926-SIN',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '10',
+25 silly get     'x-timer': 'S1472774572.708998,VS0,VE0',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose get saving webpack to /Users/cocoxue/.npm/registry.npmjs.org/webpack/.cache.json
+27 verbose correctMkdir /Users/cocoxue/.npm correctMkdir not in flight; initializing
+28 silly addNameTag next cb for webpack with tag latest
+29 silly addNamed webpack@1.13.2
+30 verbose addNamed "1.13.2" is a plain semver version for webpack
+31 silly mapToRegistry name webpack
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry data Result {
+34 silly mapToRegistry   raw: 'webpack',
+34 silly mapToRegistry   scope: null,
+34 silly mapToRegistry   name: 'webpack',
+34 silly mapToRegistry   rawSpec: '',
+34 silly mapToRegistry   spec: 'latest',
+34 silly mapToRegistry   type: 'tag' }
+35 silly mapToRegistry uri https://registry.npmjs.org/webpack
+36 verbose addRemoteTarball https://registry.npmjs.org/webpack/-/webpack-1.13.2.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/webpack/-/webpack-1.13.2.tgz',
+37 verbose addRemoteTarball   'f11a96f458eb752970a86abe746c0704fabafaf3' ]
+38 info retry fetch attempt 1 at 08:03:06
+39 info attempt registry request try #1 at 08:03:06
+40 http fetch GET https://registry.npmjs.org/webpack/-/webpack-1.13.2.tgz
+41 http fetch 200 https://registry.npmjs.org/webpack/-/webpack-1.13.2.tgz
+42 silly fetchAndShaCheck shasum f11a96f458eb752970a86abe746c0704fabafaf3
+43 verbose addTmpTarball /var/folders/x0/g0z8rjvj3mx58d8b_97kmr0h0000gn/T/npm-5511-a496ff60/registry.npmjs.org/webpack/-/webpack-1.13.2.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for webpack@1.13.2
+45 verbose correctMkdir /Users/cocoxue/.npm correctMkdir not in flight; initializing
+46 silly cache afterAdd webpack@1.13.2
+47 verbose afterAdd /Users/cocoxue/.npm/webpack/1.13.2/package/package.json not in flight; writing
+48 verbose correctMkdir /Users/cocoxue/.npm correctMkdir not in flight; initializing
+49 verbose afterAdd /Users/cocoxue/.npm/webpack/1.13.2/package/package.json written
+50 silly install resolved [ { name: 'webpack',
+50 silly install resolved     version: '1.13.2',
+50 silly install resolved     author: { name: 'Tobias Koppers @sokra' },
+50 silly install resolved     description: 'Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jade, coffee, css, less, ... and your custom stuff.',
+50 silly install resolved     dependencies:
+50 silly install resolved      { async: '^1.3.0',
+50 silly install resolved        clone: '^1.0.2',
+50 silly install resolved        'enhanced-resolve': '~0.9.0',
+50 silly install resolved        acorn: '^3.0.0',
+50 silly install resolved        interpret: '^0.6.4',
+50 silly install resolved        'loader-utils': '^0.2.11',
+50 silly install resolved        'memory-fs': '~0.3.0',
+50 silly install resolved        mkdirp: '~0.5.0',
+50 silly install resolved        'node-libs-browser': '^0.6.0',
+50 silly install resolved        optimist: '~0.6.0',
+50 silly install resolved        'supports-color': '^3.1.0',
+50 silly install resolved        tapable: '~0.1.8',
+50 silly install resolved        'uglify-js': '~2.6.0',
+50 silly install resolved        watchpack: '^0.2.1',
+50 silly install resolved        'webpack-core': '~0.6.0' },
+50 silly install resolved     license: 'MIT',
+50 silly install resolved     devDependencies:
+50 silly install resolved      { benchmark: '^1.0.0',
+50 silly install resolved        'bundle-loader': '~0.5.0',
+50 silly install resolved        'codecov.io': '^0.1.2',
+50 silly install resolved        'coffee-loader': '~0.7.1',
+50 silly install resolved        'coffee-script': '^1.10.0',
+50 silly install resolved        'component-webpack-plugin': '~0.2.0',
+50 silly install resolved        coveralls: '^2.11.2',
+50 silly install resolved        'css-loader': '~0.15.0',
+50 silly install resolved        diff: '^2.0.2',
+50 silly install resolved        eslint: '^1.1.0',
+50 silly install resolved        'eslint-plugin-nodeca': '^1.0.3',
+50 silly install resolved        express: '~4.13.1',
+50 silly install resolved        'extract-text-webpack-plugin': '~0.8.0',
+50 silly install resolved        'file-loader': '~0.8.0',
+50 silly install resolved        glob: '^5.0.14',
+50 silly install resolved        'i18n-webpack-plugin': '~0.2.0',
+50 silly install resolved        istanbul: '^0.3.13',
+50 silly install resolved        jade: '^1.11.0',
+50 silly install resolved        'jade-loader': '~0.7.0',
+50 silly install resolved        'js-beautify': '^1.5.10',
+50 silly install resolved        'json-loader': '~0.5.1',
+50 silly install resolved        less: '^2.5.1',
+50 silly install resolved        'less-loader': '^2.0.0',
+50 silly install resolved        mocha: '~2.2.0',
+50 silly install resolved        'mocha-lcov-reporter': '0.0.2',
+50 silly install resolved        'raw-loader': '~0.5.0',
+50 silly install resolved        'script-loader': '~0.6.0',
+50 silly install resolved        should: '^7.0.2',
+50 silly install resolved        'style-loader': '~0.12.0',
+50 silly install resolved        'url-loader': '~0.5.0',
+50 silly install resolved        'val-loader': '~0.5.0',
+50 silly install resolved        'vm-browserify': '~0.0.0',
+50 silly install resolved        'webpack-dev-middleware': '^1.0.0',
+50 silly install resolved        'worker-loader': '~0.6.0' },
+50 silly install resolved     engines: { node: '>=0.6' },
+50 silly install resolved     repository:
+50 silly install resolved      { type: 'git',
+50 silly install resolved        url: 'git+https://github.com/webpack/webpack.git' },
+50 silly install resolved     homepage: 'https://github.com/webpack/webpack',
+50 silly install resolved     main: 'lib/webpack.js',
+50 silly install resolved     web: 'lib/webpack.web.js',
+50 silly install resolved     bin: { webpack: './bin/webpack.js' },
+50 silly install resolved     files: [ 'lib/', 'bin/', 'buildin/', 'hot/', 'web_modules/' ],
+50 silly install resolved     scripts:
+50 silly install resolved      { pretest: 'npm run lint && npm run beautify-lint',
+50 silly install resolved        test: 'mocha',
+50 silly install resolved        travis: 'npm run cover -- --report lcovonly',
+50 silly install resolved        lint: 'eslint lib bin hot scripts',
+50 silly install resolved        'beautify-lint': 'node ./scripts/beautify-check',
+50 silly install resolved        beautify: 'node ./scripts/beautify-rewrite',
+50 silly install resolved        precover: 'npm run lint && npm run beautify-lint',
+50 silly install resolved        cover: 'istanbul cover -x *.runtime.js node_modules/mocha/bin/_mocha',
+50 silly install resolved        'publish-patch': 'npm run lint && npm run beautify-lint && mocha && npm version patch && git push && git push --tags && npm publish' },
+50 silly install resolved     gitHead: '4b20545b375da82aa6418e6d498f01d543110af0',
+50 silly install resolved     bugs: { url: 'https://github.com/webpack/webpack/issues' },
+50 silly install resolved     _id: 'webpack@1.13.2',
+50 silly install resolved     _shasum: 'f11a96f458eb752970a86abe746c0704fabafaf3',
+50 silly install resolved     _from: 'webpack@latest',
+50 silly install resolved     _npmVersion: '3.8.3',
+50 silly install resolved     _nodeVersion: '5.10.1',
+50 silly install resolved     _npmUser: { name: 'sokra', email: 'tobias.koppers@googlemail.com' },
+50 silly install resolved     dist:
+50 silly install resolved      { shasum: 'f11a96f458eb752970a86abe746c0704fabafaf3',
+50 silly install resolved        tarball: 'https://registry.npmjs.org/webpack/-/webpack-1.13.2.tgz' },
+50 silly install resolved     maintainers: [ [Object] ],
+50 silly install resolved     _npmOperationalInternal:
+50 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+50 silly install resolved        tmp: 'tmp/webpack-1.13.2.tgz_1471509127953_0.21838289056904614' },
+50 silly install resolved     directories: {},
+50 silly install resolved     _resolved: 'https://registry.npmjs.org/webpack/-/webpack-1.13.2.tgz' } ]
+51 info install webpack@1.13.2 into /usr/local/lib
+52 info installOne webpack@1.13.2
+53 verbose installOne of webpack to /usr/local/lib not in flight; installing
+54 verbose correctMkdir /Users/cocoxue/.npm/_locks correctMkdir not in flight; initializing
+55 verbose makeDirectory /Users/cocoxue/.npm/_locks creation not in flight; initializing
+56 silly makeDirectory /Users/cocoxue/.npm/_locks uid: 501 gid: 20
+57 verbose lock using /Users/cocoxue/.npm/_locks/webpack-865c90cad072eb35.lock for /usr/local/lib/node_modules/webpack
+58 silly install write writing webpack 1.13.2 to /usr/local/lib/node_modules/webpack
+59 verbose unbuild lib/node_modules/webpack
+60 silly gentlyRm /usr/local/lib/node_modules/webpack is being purged from base /usr/local
+61 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/webpack
+62 verbose tar unpack /Users/cocoxue/.npm/webpack/1.13.2/package.tgz
+63 verbose tar unpacking to /usr/local/lib/node_modules/webpack
+64 silly gentlyRm /usr/local/lib/node_modules/webpack is being purged
+65 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/webpack
+66 silly gunzTarPerm modes [ '755', '644' ]
+67 error tar.unpack untar error /Users/cocoxue/.npm/webpack/1.13.2/package.tgz
+68 verbose unlock done using /Users/cocoxue/.npm/_locks/webpack-865c90cad072eb35.lock for /usr/local/lib/node_modules/webpack
+69 verbose fstream_path /usr/local/lib/node_modules/webpack
+70 verbose fstream_type Directory
+71 verbose fstream_class DirWriter
+72 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/webpack'
+72 verbose stack     at Error (native)
+73 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+73 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+73 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+74 verbose cwd /Users/cocoxue/Desktop/miaov/作品/blog2
+75 error Darwin 15.6.0
+76 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "webpack" "-g"
+77 error node v4.4.4
+78 error npm  v2.15.1
+79 error path /usr/local/lib/node_modules/webpack
+80 error code EACCES
+81 error errno -13
+82 error syscall mkdir
+83 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/webpack'
+83 error     at Error (native)
+83 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/webpack']
+83 error   errno: -13,
+83 error   code: 'EACCES',
+83 error   syscall: 'mkdir',
+83 error   path: '/usr/local/lib/node_modules/webpack',
+83 error   fstream_type: 'Directory',
+83 error   fstream_path: '/usr/local/lib/node_modules/webpack',
+83 error   fstream_class: 'DirWriter',
+83 error   fstream_stack:
+83 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+83 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+83 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+84 error Please try running this command again as root/Administrator.
+85 verbose exit [ -13, true ]
+86 verbose unbuild lib/node_modules/webpack
+87 silly gentlyRm /usr/local/lib/node_modules/webpack is being purged from base /usr/local
+88 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/webpack

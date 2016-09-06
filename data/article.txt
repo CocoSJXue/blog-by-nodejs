@@ -1,0 +1,44 @@
+[
+	{
+		"title":"HTML",
+		"HTML":[
+			{
+				"knowledge1":{
+					"kTitle":"display:inline-block"
+//					"cont":"特性：
+//								1、块在一行显示；
+//								2、行内属性标签支持宽高；
+//								3、没有宽度的时候内容撑开宽度
+//							问题：
+//								1、代码换行被解析；
+//								2、ie6 ie7 不支持块属性标签的inline-block;"
+				},
+				"knowledge2":{
+					"kTitle":"编码要求"
+					"cont":"
+							1、所有书写均在英文半角状态下的小写；<br />
+							2、id，class必须以字母开头；<br />
+							3、所有标签必须闭合；<br />
+							4、html标签用tab键缩进；<br />
+							5、属性值必须带引号；<br />
+							6、&lt;!-- html注释 --&gt;<br />
+							7、/* css注释 */<br />
+							8、ul,li/ol,li/dl,dt,dd拥有父子级关系的标签；<br />
+							9、p,dt,h标签  里面不能嵌套块属性标签；<br />
+							10、a标签不能嵌套a；<br />
+							11、内联标签不能嵌套块标签；"
+				},
+				"knowledge3":{
+					"kTitle":"after请浮动"
+//					"cont":".clearfix:after{
+//							content: "";
+//							display: block;
+//							clear: both;
+//							}"
+					
+				}
+			}
+		]
+		
+	}
+]

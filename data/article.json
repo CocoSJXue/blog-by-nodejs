@@ -1,0 +1,137 @@
+[
+	{
+		"title":"HTML",
+		"HTML":[
+			{
+			"knowledge":{
+					"kTitle":"display:inline-block",
+					"cont":"特性：1、块在一行显示； \n 2、行内属性标签支持宽高；\n 3、没有宽度的时候内容撑开宽度；\n 问题：\n 1、代码换行被解析；\n 2、ie6 ie7 不支持块属性标签的inline-block;"
+				}
+			},
+			{"knowledge":{
+					"kTitle":"编码要求",
+					"cont":"编码要求：\n 1、所有书写均在英文半角状态下的小写；\n 2、id，class必须以字母开头；\n 3、所有标签必须闭合；\n 4、html标签用tab键缩进；\n 5、属性值必须带引号；\n 6、&lt;!-- html注释 --&gt；\n 7、/* css注释 */ ；\n 8、ul,li/ol,li/dl,dt,dd拥有父子级关系的标签；\n 9、p,dt,h标签  里面不能嵌套块属性标签；\n 10、a标签不能嵌套a；\n 11、内联标签不能嵌套块标签；"
+				}
+			},
+			{"knowledge":{
+					"kTitle":"after请浮动",
+					"cont":"after请浮动：.clearfix:after{content: '';display: block;clear: both;}"
+				}
+			},
+			{"knowledge":{
+					"kTitle":"透明度",
+					"cont":"透明度：标准 不透明度：  opacity:0~1；  IE 滤镜：    filter:alpha(opacity=0~100);"
+				}
+			}
+		]
+	},
+	{
+		"title":"CSS",
+		"CSS":[
+			{
+			"knowledge":{
+					"kTitle":"链接的四种状态",
+					"cont":"链接的四种状态：a:link - 普通的、未被访问的链接；a:visited - 用户已访问的链接；a:hover - 鼠标指针位于链接的上方；a:active - 链接被点击的时刻"
+				}
+			},
+			{"knowledge":{
+					"kTitle":"块元素嵌套规则",
+					"cont":"块元素嵌套规则：p,h,dt不能嵌套块元素"
+				}
+			},
+			{"knowledge":{
+					"kTitle":"浮动元素之间注释导致多复制一个文字问题",
+					"cont":"浮动元素之间注释导致多复制一个文字问题：两个浮动元素中间有注释或者内嵌元素并且和父级宽度相差不超过3像素，（或者两个浮动元素宽度之和与父级宽度相差不超过3像素）"
+				}
+			},
+			{"knowledge":{
+					"kTitle":"IE6下输入类型表单控件背景图，会随着输入内容消失",
+					"cont":"IE6下输入类型表单控件背景图，会随着输入内容消失：用fixed解决，background：url(......) no-repeat fixed;"
+				}
+			}
+		]
+	},
+	{
+		"title":"JavaScript",
+		"JavaScript":[{
+			"knowledge":{
+					"kTitle":"break和continue",
+					"cont":"break： 跳出整个循环，后续代码不再执行，可以在for、switch、while的语句中使用;continue:跳出此次循环，接着继续开始,可以在for、while中使用"
+				}
+			},
+			{"knowledge":{
+					"kTitle":"预解析",
+					"cont":"函数预解析：会将函数提到顶部；变量预解析：会内部事先知道是否有该变量，但不会改变解析位置"
+				}
+			},
+			{"knowledge":{
+					"kTitle":"数组方法",
+					"cont":"arr.push()，返回值：新数组的length；arr.unshift()，返回值：新数组的length；arr.pop()，删除数组最后一个元素，返回值：被删除的那一个元素；arr.shift()，删除数组第一个元素，返回值：被删除的那一个元素；arr.slice()，截取数组中一部分，并返回这个新的数组，返回值：截取后的新的数组；arr.splice()，用新元素替换旧元素，以此修改数组的内容，返回值：由被删除的元素组成的一个数组"
+				}
+			},
+			{"knowledge":{
+					"kTitle":"window.location",
+					"cont":"window.location.href：字符串版的地址栏信息；window.location.search:地址栏查询信息 （问号到#号之间的所有内容）；window.location.hash:锚点信息（#号后面的所有内容）"
+				}
+			},
+			{"knowledge":{
+					"kTitle":"事件流",
+					"cont":"当页面中的一个元素接收到事件的时候，这个元素的所有父级都会触发该事件，也就是事件会在这个元素的所有父级之间进行传播，这个传播的过程就叫 事件流"
+				}
+			}
+			
+		]
+	},
+	{
+		"title":"jQuery",
+		"jQuery":[
+			{
+				"knowledge":{
+					"kTitle":"属性",
+					"cont":"attr(name|properties|key,value|fn)，添加/获取元素属性；removeAttr(name)，移出属性；prop(name|properties|key,value|fn)，添加/获取元素属性；removeProp(name)，移出属性；"
+				}
+			},
+			{
+				"knowledge":{
+					"kTitle":"筛选",
+					"cont":"hasClass(class)，检查当前的元素是否含有某个特定的类，如果有，则返回true；filter(expr|obj|ele|fn)，筛选出与指定表达式匹配的元素集合；is(expr|obj|ele|fn)，根据选择器、DOM元素或 jQuery 对象来检测匹配元素集合，如果其中至少有一个元素符合这个给定的表达式就返回true。"
+				}
+			},
+			{
+				"knowledge":{
+					"kTitle":"偏移量",
+					"cont":"offset([coordinates]),获取匹配元素在当前视口的相对偏移;position(),获取匹配元素相对父元素的偏移。"
+				}
+			},
+			{
+				"knowledge":{
+					"kTitle":"绑定事件的方法",
+					"cont":".on(),.one()为每一个匹配元素的特定事件（像click）绑定一个一次性的事件处理函数。.bind(),.live() 给所有匹配的元素附加一个事件处理函数，即使这个元素是以后再添加进来的也有效。这个方法是基本是的 .bind() 方法的一个变体。使用 .bind() 时，选择器匹配的元素会附加一个事件处理函数，而以后再添加的元素则不会有。为此需要再使用一次 .bind() 才行"
+				}
+			}
+		]
+	},
+	{
+		"title":"AJAX",
+		"AJAX":[
+			{
+				"knowledge":{
+					"kTitle":"AJAX请求步骤",
+					"cont":"第一步：创建ajax对象，var xhr = new XMLHttpRequest()；第二步：设置请求参数，xhr.open(string 请求方式, string 请求的url，boolean 同步/异步)；第三步：发送请求，xhr.send();"
+				}
+			},
+			{
+				"knowledge":{
+					"kTitle":"设置头信息",
+					"cont":"xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');（ application/x-www-form-urlencoded，multipart/form-data,text/plain ）"
+				}
+			},
+			{
+				"knowledge":{
+					"kTitle":"js-ajax跨域解决方案",
+					"cont":"如果我们要找一个解决ajax跨域请求的问题，要的解决方案需要包含以下几点：1.能够发送http请求；2.不受同源策略的影响；3.能够返回数据给javascript使用（ <img> <link> <script>能发送请求,<img> <link> <script>不受同源策略的影响,<script>返回的数据可以被js解析 ）-----------------------原理： 1,后端输出数据和函数调用；2,前端通过script动态加载后端接口，根据后端调用的函数，定义好函数的结构，当script加载完成的时候，自动执行函数调用；  问题：1,不受跨域的影响，这个接口开发性比较大，任何人都可以访问； 2,只能使用get方式"
+				}
+			}
+		]
+	}
+]
