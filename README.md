@@ -1,5 +1,6 @@
 # blog-by-nodejs
 基于express+mongoose+swig+jquery+ES6搭建的个人博客社区
+
 简介：
 1. 项目后端搭建:
 
