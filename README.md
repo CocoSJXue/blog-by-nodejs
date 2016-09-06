@@ -2,6 +2,7 @@
 基于express+mongoose+swig+jquery+ES6搭建的个人博客社区
 
 简介：
+
 1. 项目后端搭建:
 
 使用express框架完成博客网站后端搭建;
